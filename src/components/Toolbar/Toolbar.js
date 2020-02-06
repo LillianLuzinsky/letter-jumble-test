@@ -1,10 +1,14 @@
 import React from 'react';
+
+import DrawerToggleButton from '../SideDraw/DrawerToggleButton'
 import './Toolbar.css';
 
 const toolbar = props => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
-      <div></div>
+      <div>
+        <DrawerToggleButton/>
+      </div>
       <div className="toolbar__logo">
         <a href="/">letter jumble</a>
       </div>
