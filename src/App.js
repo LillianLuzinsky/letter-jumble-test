@@ -5,8 +5,10 @@ import './App.css';
 function App() {
   return (
     <React.Fragment>
-      <Toolbar/>
-      <h1>hello</h1>
+      <Toolbar />
+      <main style={{marginTop: '56px'}}>
+        <h1>hello</h1>
+      </main>
     </React.Fragment>
   );
 }
