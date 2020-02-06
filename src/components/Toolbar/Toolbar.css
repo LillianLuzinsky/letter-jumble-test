@@ -1,7 +1,7 @@
 .toolbar{
   position: fixed;
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
   height: 50px;
@@ -39,14 +39,16 @@
   padding: 0 0.5rem;
 }
 
-.toolbar_navigation-items a button{
+.toolbar_navigation-items a,
+.toolbar_navigation-items button{
   color: white;
   text-decoration: none;
   background: none;
-  border: white solid 1.5px;
+  border: none;
   border-radius: 50px;
   font-size: 1.5rem;
-  width: 110px;
+  width: 130px;
+  letter-spacing: 2px;
 }
 
 #jumble{
@@ -62,7 +64,7 @@
 #jumble:hover, #jumble:active{
     color: white;
     background: orange;
-    transition: .5s;
+    transition: 1s;
 }
 
 #spelling:hover, #spelling:active{

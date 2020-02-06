@@ -16,9 +16,7 @@ const toolbar = props => (
       <div className="toolbar_navigation-items">
         <ul>
           <li>
-            <a href="/jumble">
               <button id="jumble">Jumble</button>
-            </a>
           </li>
           <li>
             <a href="/spelling">
