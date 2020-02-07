@@ -2,14 +2,22 @@ import React, { useState } from "react";
 import { sortableContainer, sortableElement } from "react-sortable-hoc";
 import arrayMove from "array-move";
 import Toolbar from './components/Toolbar/Toolbar'
-import Letter from "./components/Letter";
+import { Letter, LetterContainer } from "./components/Alphabet/Letter";
+import A from './components/Alphabet/a';
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
   <div className="letter-hover">{children}</div>
 ));
 const SortableLetter = sortableElement(({ svg }) => (
-  <Letter key={svg} svg={svg} />
+  <LetterContainer>
+    <Letter key={svg} svg={svg} />
+  </LetterContainer>
 ));
+
+const letterMap = {
+  a: <A />,
+  // b: <B />
+};
 
 const App = () => {
   const [svgs, setSvgs] = useState([

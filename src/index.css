@@ -36,3 +36,10 @@ h1{
   font-weight: 500;
   color: #3e3e3e;
 }
+
+.a{
+  fill: none;
+  stroke: #A0F500;
+  stroke-width: 8;
+  stroke-miterlimit: 10;
+}
