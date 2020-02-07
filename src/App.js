@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { sortableContainer, sortableElement } from "react-sortable-hoc";
 import arrayMove from "array-move";
 import Toolbar from './components/Toolbar/Toolbar'
+
 import { Letter, LetterContainer } from "./components/Alphabet/Letter";
 import A from './components/Alphabet/a';
 
@@ -94,6 +95,7 @@ const App = () => {
   return (
     <div className="App" style={{ height: "100" }}>
       <Toolbar />
+      <A/>
       <main style={{ marginTop: "50px" }}></main>
       <h1>Put the letters in order</h1>
       <SortableLetterContainer

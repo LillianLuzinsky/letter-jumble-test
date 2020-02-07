@@ -2,17 +2,26 @@ import React from "react";
 import styled from 'styled-components';
 
 const SVGContainer = styled.div`
+#a{
+ stroke: pink;
+ fill: none;
+ stroke-width: 8;
+ :hover{
+   stroke: black;
+ }
+}
 	width: 100px;
 	height: 100px;
 	:hover {
-		background-color: red;
+    background-color: red;
+    stroke: white;
 	}
 `;
 
 function A() {
   return (
     <SVGContainer>
-      <svg
+      <svg id="a"
         xmlns="http://www.w3.org/2000/svg"
         x="0"
         y="0"
