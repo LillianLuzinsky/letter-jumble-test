@@ -21,3 +21,8 @@
   width: 110px;
   height: auto;
 }
+
+h1{
+  font-weight: 500;
+  color: #1c1c1c;
+}
