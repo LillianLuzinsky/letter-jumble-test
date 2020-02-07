@@ -22,18 +22,13 @@ body {
 }
 
 .App h1 {
-  font-size: 52px;
+  font-size: 3rem;
   margin: 0;
-}
-
-.App h2 {
-  color: #f6c945;
-  text-transform: uppercase;
 }
 
 .App img {
   cursor: grab;
-  width: 110px;
+  width: 12vw;
   height: auto;
 }
 

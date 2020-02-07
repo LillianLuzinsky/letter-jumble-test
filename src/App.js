@@ -5,7 +5,7 @@ import Toolbar from './components/Toolbar/Toolbar'
 import Letter from "./components/Letter";
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
-  <div className="gifs">{children}</div>
+  <div className="letter-hover">{children}</div>
 ));
 const SortableLetter = sortableElement(({ svg }) => (
   <Letter key={svg} svg={svg} />
