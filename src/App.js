@@ -7,9 +7,7 @@ function App() {
   return (
     <React.Fragment style={{height: '100%'}}>
       <Toolbar />
-      <SideDrawer/>
       <main style={{marginTop: '56px'}}>
-        <h1>hello</h1>
       </main>
     </React.Fragment>
   );
