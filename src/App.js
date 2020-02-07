@@ -3,7 +3,6 @@ import { sortableContainer, sortableElement } from "react-sortable-hoc";
 import arrayMove from "array-move";
 import Toolbar from './components/Toolbar/Toolbar'
 import Letter from "./components/Letter";
-import "./App.css";
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
   <div className="gifs">{children}</div>
