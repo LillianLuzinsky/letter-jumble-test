@@ -1,8 +1,27 @@
 import React from "react";
+import styled from "styled-components";
+
+const SVGContainer = styled.div`
+  #f {
+    stroke: pink;
+    fill: none;
+    stroke-width: 8;
+    :hover {
+      stroke: black;
+    }
+  }
+  width: 100px;
+  height: 100px;
+  :hover {
+    background-color: red;
+    stroke: white;
+  }
+`;
 
 function F() {
   return (
-    <svg id="f"
+    <SVGContainer>
+      <svg id="f"
       xmlns="http://www.w3.org/2000/svg"
       x="0"
       y="0"
@@ -19,6 +38,8 @@ function F() {
         <path d="M137.5 99.5L165.5 99.5" className="f"></path>
       </g>
     </svg>
+    </SVGContainer>
+    
   );
 }
 
