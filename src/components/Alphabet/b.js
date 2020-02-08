@@ -1,16 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 230 230" style="enable-background:new 0 0 230 230;" xml:space="preserve">
-<style type="text/css">
-	.b{fill:none;stroke:#73FFA5;stroke-width:8;stroke-miterlimit:10;}
-</style>
-<g id="CapB">
-	<path id="CapB1" class="st0" d="M54.5,152.5v-80h18c0,0,19,0,19,20c0,0-1,16-15,16c-11,0-20,0-20,0"/>
-	<path id="CapB2" class="st0" d="M55.5,108.5h21c0,0,24,1,24,22c0,20-22,21-24,21s-24.5,0-24.5,0"/>
-</g>
-<g id="LowB">
-	<line id="LowB1" class="st0" x1="125.5" y1="71" x2="125.5" y2="153"/>
-	<ellipse id="LowB2" class="st0" cx="151" cy="125" rx="25.5" ry="26.5"/>
-</g>
-</svg>
+import React from "react";
+import styled from "styled-components";
+
+const SVGContainer = styled.div`
+  #b {
+    stroke: red;
+    fill: none;
+    stroke-width: 8;
+    :hover {
+      stroke: black;
+    }
+  }
+  width: 100px;
+  height: 100px;
+  :hover {
+    background-color: red;
+    stroke: white;
+  }
+`;
+
+function B() {
+  return (
+    <SVGContainer>
+      <svg
+        id="b"
+        xmlns="http://www.w3.org/2000/svg"
+        x="0"
+        y="0"
+        enableBackground="new 0 0 230 230"
+        version="1.1"
+        viewBox="0 0 230 230"
+        xmlSpace="preserve"
+      >
+        <g>
+          <path
+            d="M54.5 152.5v-80h18s19 0 19 20c0 0-1 16-15 16h-20"
+            className="b"
+          ></path>
+          <path
+            d="M55.5 108.5h21s24 1 24 22c0 20-22 21-24 21H52"
+            className="b"
+          ></path>
+        </g>
+        <g>
+          <path d="M125.5 71L125.5 153" className="b"></path>
+          <ellipse
+            cx="151"
+            cy="125"
+            className="b"
+            rx="25.5"
+            ry="26.5"
+          ></ellipse>
+        </g>
+      </svg>
+    </SVGContainer>
+  );
+}
+
+export default B;

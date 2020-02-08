@@ -5,6 +5,7 @@ import Toolbar from './components/Toolbar/Toolbar'
 
 import { Letter, LetterContainer } from "./components/Alphabet/Letter";
 import A from './components/Alphabet/a';
+import B from './components/Alphabet/b'
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
   <div className="letter-hover">{children}</div>
@@ -96,6 +97,7 @@ const App = () => {
     <div className="App" style={{ height: "100" }}>
       <Toolbar />
       <A/>
+      <B/>
       <main style={{ marginTop: "50px" }}></main>
       <h1>Put the letters in order</h1>
       <SortableLetterContainer
