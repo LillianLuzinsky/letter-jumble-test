@@ -92,7 +92,6 @@ const App = () => {
         onSortEnd={onSortEnd}
         onSortStart={(node, event) =>{
           event.preventDefault()
-          togglePlay(node.index);
         }}
       >
         {svgs.map((svg, i) => {
