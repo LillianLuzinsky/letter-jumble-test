@@ -12,11 +12,22 @@ export const LetterContainer = styled.span`
   display: inline-block;
   width: 12vw;
   height: 12vw;
-  opacity: 1;
-  transition: opacity 1s ease;
+  transition: 2s;
+  animation: colourRange 4s linear infinite;
 
   :hover {
-    background-color: white;
-    opacity: 0.3;
+    background: white;
+    transition: 0s;
+    /* animation: colourRange 2s linear infinite; */
+
+    @keyframes colourRange{
+  0%{
+    filter:  hue-rotate(0deg);
+
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
   }
 `;
