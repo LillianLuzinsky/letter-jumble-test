@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from 'styled-components';
 
-export const Letter = ({ svg }) => <img src={svg} alt="letter" />;
+export const Letter = ({ svg }) => <img src={`./letters/${svg}.svg`} alt="letter" />;
 
 Letter.propTypes = {
   svg: PropTypes.string.isRequired
