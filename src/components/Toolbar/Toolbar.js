@@ -3,7 +3,7 @@ import React from 'react';
 import DrawerToggleButton from '../SideDraw/DrawerToggleButton'
 import './Toolbar.css';
 
-const toolbar = ({ svgs, handleSetJumble }) => {
+const toolbar = ({ svgs, handleSetJumble, handleReset }) => {
 
   const jumbleArr = () => {
     const newArr = new Array(26).fill(null)
@@ -37,6 +37,9 @@ const toolbar = ({ svgs, handleSetJumble }) => {
           <ul>
             <li>
                 <button onClick={jumbleArr} id="jumble">Jumble</button>
+            </li>
+            <li>
+                <button onClick={handleReset} id="jumble">Reset</button>
             </li>
             <li>
               <a href="/spelling">
