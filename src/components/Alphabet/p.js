@@ -1,8 +1,27 @@
 import React from "react";
+import styled from "styled-components";
+
+const SVGContainer = styled.div`
+  #p {
+    stroke: pink;
+    fill: none;
+    stroke-width: 8;
+    :hover {
+      stroke: black;
+    }
+  }
+  width: 100px;
+  height: 100px;
+  :hover {
+    background-color: red;
+    stroke: white;
+  }
+`;
 
 function P() {
   return (
-    <svg id ="p"
+    <SVGContainer>
+      <svg id ="p"
       xmlns="http://www.w3.org/2000/svg"
       x="0"
       y="0"
@@ -27,6 +46,8 @@ function P() {
         ></ellipse>
       </g>
     </svg>
+    </SVGContainer>
+    
   );
 }
 

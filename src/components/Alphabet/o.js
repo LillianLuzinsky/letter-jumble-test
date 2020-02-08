@@ -1,8 +1,27 @@
 import React from "react";
+import styled from "styled-components";
+
+const SVGContainer = styled.div`
+  #o {
+    stroke: pink;
+    fill: none;
+    stroke-width: 8;
+    :hover {
+      stroke: black;
+    }
+  }
+  width: 100px;
+  height: 100px;
+  :hover {
+    background-color: red;
+    stroke: white;
+  }
+`;
 
 function O() {
   return (
-    <svg id="o"
+    <SVGContainer>
+      <svg id="o"
       xmlns="http://www.w3.org/2000/svg"
       x="0"
       y="0"
@@ -28,6 +47,8 @@ function O() {
         ></ellipse>
       </g>
     </svg>
+    </SVGContainer>
+    
   );
 }
 
