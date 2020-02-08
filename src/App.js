@@ -5,7 +5,31 @@ import Toolbar from './components/Toolbar/Toolbar'
 
 import { Letter, LetterContainer } from "./components/Alphabet/Letter";
 import A from './components/Alphabet/a';
-import B from './components/Alphabet/b'
+import B from './components/Alphabet/b';
+import C from "./components/Alphabet/c";
+import D from "./components/Alphabet/d";
+import E from "./components/Alphabet/e";
+import F from "./components/Alphabet/f";
+import G from "./components/Alphabet/g";
+import H from "./components/Alphabet/h";
+import I from "./components/Alphabet/i";
+import J from "./components/Alphabet/j";
+import K from "./components/Alphabet/k";
+import L from "./components/Alphabet/l";
+import M from "./components/Alphabet/m";
+import N from "./components/Alphabet/n";
+import O from "./components/Alphabet/o";
+import P from "./components/Alphabet/p";
+import Q from "./components/Alphabet/q";
+import R from "./components/Alphabet/r";
+import S from "./components/Alphabet/s";
+import T from "./components/Alphabet/t";
+import U from "./components/Alphabet/u";
+import V from "./components/Alphabet/v";
+import W from "./components/Alphabet/w";
+import X from "./components/Alphabet/x";
+import Y from "./components/Alphabet/y";
+import Z from "./components/Alphabet/z";
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
   <div className="letter-hover">{children}</div>
@@ -18,7 +42,31 @@ const SortableLetter = sortableElement(({ svg }) => (
 
 const letterMap = {
   a: <A />,
-  // b: <B />
+  b: <B/>,
+  c: <C/>,
+  d: <D/>,
+  e: <E/>,
+  f: <F/>,
+  g: <G/>,
+  h: <H/>,
+  i: <I/>,
+  j: <J/>,
+  k: <K/>,
+  l: <L/>,
+  m: <M/>,
+  n: <N/>,
+  o: <O/>,
+  p: <P/>,
+  q: <Q/>,
+  r: <R/>,
+  s: <S/>,
+  t: <T/>,
+  u: <U/>,
+  v: <V/>,
+  w: <W/>,
+  x: <X/>,
+  y: <Y/>,
+  z: <Z/>
 };
 
 const App = () => {
