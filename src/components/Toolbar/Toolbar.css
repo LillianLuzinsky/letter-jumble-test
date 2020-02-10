@@ -58,8 +58,8 @@
 }
 
 #spelling{
-  color: orangered;
-  border: orangered solid 1.5px;
+  color: #ff0080;
+  border: #ff0080 solid 1.5px;
 }
 
 #jumble:hover, #jumble:active{
@@ -70,6 +70,6 @@
 
 #spelling:hover, #spelling:active{
     color: white;
-    background: orangered;
+    background: #ff0080;
     transition: .5s;
 }

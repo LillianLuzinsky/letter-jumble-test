@@ -10,14 +10,15 @@ Letter.propTypes = {
 
 export const LetterContainer = styled.span`
   display: inline-block;
-  width: 12vw;
-  height: 12vw;
-  /* transition: 2s; */
+  margin-bottom: 10px;
+  width: 10vw;
+  height: 10vw;
+  transition: 0s;
   /* animation: colourRange 4s linear infinite; */
 
   :hover {
     background: white;
-    transition: 3s;
+    transition: 1s;
     /* animation: colourRange 2s linear infinite; */
 
     @keyframes colourRange{

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { sortableContainer, sortableElement } from "react-sortable-hoc";
 import arrayMove from "array-move";
 import Toolbar from './components/Toolbar/Toolbar'
@@ -68,15 +68,15 @@ const App = () => {
   
 
   return (
-    <div className="App" style={{ height: "300" }}>
+    <div className="App">
       <Toolbar 
         svgs={svgs}
         handleSetJumble={handleJumble}
         handleReset={reset}
       />
-      <main style={{ marginTop: "50px" }}></main>
-      <h1>Put the letters in order</h1>
-      <SortableLetterContainer
+      <main style={{ marginTop: "80px" }}></main>
+      <h1 style={{ marginBottom: "50px" }}>Put the letters in order</h1>
+      <SortableLetterContainer 
         axis="x"
         onSortEnd={onSortEnd}
         onSortStart={(node, event) =>{
