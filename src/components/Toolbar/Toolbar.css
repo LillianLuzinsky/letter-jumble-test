@@ -53,23 +53,37 @@
 }
 
 #jumble{
-  color: orange;
-  border: orange solid 1.5px;
-}
-
-#spelling{
-  color: #ff0080;
-  border: #ff0080 solid 1.5px;
+  color: #ae7fff;
+  border: #ae7fff solid 1.5px;
+  transition: 1s;
 }
 
 #jumble:hover, #jumble:active{
     color: white;
-    background: orange;
-    transition: 1s;
+    background: #ae7fff;
+    transition: 0s;
+}
+
+#reset{
+  color: #ff6fff;
+  border: #ff6fff solid 1.5px;
+  transition: 1s;
+}
+
+#reset:hover, #reset:active{
+    color: white;
+    background: #ff6fff;
+    transition: 0s;
+}
+
+#spelling{
+  color: #ff00c6;
+  border: #ff00c6 solid 1.5px;
+  transition: 1s;
 }
 
 #spelling:hover, #spelling:active{
     color: white;
-    background: #ff0080;
-    transition: .5s;
+    background: #ff00c6;
+    transition: 0s;
 }

@@ -39,7 +39,7 @@ const toolbar = ({ svgs, handleSetJumble, handleReset }) => {
                 <button onClick={jumbleArr} id="jumble">Jumble</button>
             </li>
             <li>
-                <button onClick={handleReset} id="jumble">Reset</button>
+                <button onClick={handleReset} id="reset">Reset</button>
             </li>
             <li>
               <a href="/spelling">
