@@ -8,22 +8,11 @@ import { Letter, LetterContainer } from "./components/Alphabet/Letter";
 const SortableLetterContainer = sortableContainer(({ children }) => (
   <div className="letter-hover">{children}</div>
 ));
-const SortableLetter = sortableElement(({ index, audio, svg, togglePlay, letter, selectedLetter }) => {
-
-  useEffect(() => {
-    if (letter === selectedLetter) {
-      console.log('this is audio',audio)
-      console.log('this is audio',letter)
-      console.log('this is audio',selectedLetter)
-      audio.url.play();
-    }
-  }, [audio, selectedLetter])
+const SortableLetter = sortableElement(({ index, svg, letter, selectedLetter }) => {
 
   return (
     <LetterContainer>
-      <div onClick={togglePlay}>
         <Letter key={svg} svg={svg} />
-      </div>
     </LetterContainer>
   )
 });
@@ -79,7 +68,7 @@ const App = () => {
   
 
   return (
-    <div className="App" style={{ height: "100" }}>
+    <div className="App" style={{ height: "300" }}>
       <Toolbar 
         svgs={svgs}
         handleSetJumble={handleJumble}
@@ -95,10 +84,8 @@ const App = () => {
         }}
       >
         {svgs.map((svg, i) => {
-          const audio = new Audio();
-          audio.url = `./components/sound/${alphabet[i]}.m4a`
           return ( 
-            <SortableLetter index={i} selectedLetter={selectedLetter} letter={svgs[i]} audio={audio} key={svg} svg={svg} collection="letters" />
+            <SortableLetter index={i} selectedLetter={selectedLetter} letter={svgs[i]} key={svg} svg={svg} collection="letters" />
           )
 
         })}
