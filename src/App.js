@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { sortableContainer, sortableElement } from "react-sortable-hoc";
 import arrayMove from "array-move";
 
-import Navbar from './components/navigation/Navbar';
-
 import Toolbar from './components/Toolbar/Toolbar';
 import { Letter, LetterContainer } from "./components/Alphabet/Letter";
 
@@ -68,8 +66,6 @@ const App = () => {
   return (
     <div className="App">
 
-      <Navbar/>
-      
       <Toolbar 
         svgs={svgs}
         handleSetJumble={handleJumble}
