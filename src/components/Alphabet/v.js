@@ -3,18 +3,18 @@ import styled from "styled-components";
 
 const SVGContainer = styled.div`
   #v {
-    stroke: pink;
+    width: 100%;
+    height: 100%;
     fill: none;
     stroke-width: 8;
+    stroke: #f2f200;
+    transition: 2s;
+
     :hover {
-      stroke: black;
+      background-color: #f2f200;
+      stroke: white;
+      transition: 0s;
     }
-  }
-  width: 100px;
-  height: 100px;
-  :hover {
-    background-color: red;
-    stroke: white;
   }
 `;
 
