@@ -18,23 +18,19 @@ body {
   background: black;
   color: #fff;
   min-height: 100vh;
-  padding: 25px;
+  padding: 25px 5%;
   text-align: left;
 }
 
-.App h1 {
-  font-size: rem;
-  margin: 0;
-}
-
-.App img {
+/* .App img {
   cursor: grab;
   width: 10vw;
   height: auto;
-}
+} */
 
 h1{
   font-weight: 500;
   color: #3e3e3e;
+  padding-left: 2%;
 }
 

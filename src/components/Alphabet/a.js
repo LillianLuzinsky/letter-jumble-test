@@ -2,20 +2,20 @@ import React from "react";
 import styled from 'styled-components';
 
 const SVGContainer = styled.div`
-#a{
- stroke: pink;
- fill: none;
- stroke-width: 8;
- :hover{
-   stroke: black;
- }
-}
-	width: 100px;
-	height: 100px;
-	:hover {
-    background-color: red;
-    stroke: white;
-	}
+  #a {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 8;
+    stroke: #f4cb00;
+    transition: 0s;
+
+    :hover {
+      background-color: #f4cb00;
+      stroke: white;
+      transition: 3s;
+    }
+  }
 `;
 
 function A() {
