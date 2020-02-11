@@ -8,11 +8,12 @@ const SVGContainer = styled.div`
     fill: none;
     stroke-width: 8;
     stroke: #60c0ea;
-    transition: 2s;
+    transition: 1.5s;
 
     :hover {
       background-color: #60c0ea;
-      stroke: white;
+      stroke: #1c1c1c;
+      stroke-width: 9;
       transition: 0s;
     }
   }

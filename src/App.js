@@ -72,7 +72,7 @@ const App = () => {
       />
       <main style={{ marginTop: "80px" }}></main>
       <h1 style={{ marginBottom: "50px" }}>Put the letters in order</h1>
-      <SortableLetterContainer 
+      <SortableLetterContainer style={{ cursor: "pointer" }}
         axis="xy"
         onSortEnd={onSortEnd}
         onSortStart={(node, event) =>{
@@ -81,7 +81,7 @@ const App = () => {
       >
         {svgs.map((svg, i) => {
           return ( 
-            <SortableLetter  index={i} selectedLetter={selectedLetter} letter={svgs[i]} key={svg} svg={svg} collection="letters" />
+            <SortableLetter index={i} selectedLetter={selectedLetter} letter={svgs[i]} key={svg} svg={svg} collection="letters" />
           )
 
         })}

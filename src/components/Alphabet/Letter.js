@@ -70,6 +70,7 @@ export const LetterContainer = styled.span`
   margin-bottom: 10px;
   width: 10vw;
   height: 10vh;
+  cursor: pointer;
 
   :hover {
     stroke: white;
