@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { sortableContainer, sortableElement } from "react-sortable-hoc";
 import arrayMove from "array-move";
-import Toolbar from './components/Toolbar/Toolbar'
 
+import Navbar from './components/navigation/Navbar';
+
+import Toolbar from './components/Toolbar/Toolbar';
 import { Letter, LetterContainer } from "./components/Alphabet/Letter";
 
 const SortableLetterContainer = sortableContainer(({ children }) => (
@@ -65,11 +67,15 @@ const App = () => {
 
   return (
     <div className="App">
+
+      <Navbar/>
+      
       <Toolbar 
         svgs={svgs}
         handleSetJumble={handleJumble}
         handleReset={reset}
       />
+
       <main style={{ marginTop: "80px" }}></main>
       <h1 style={{ marginBottom: "50px" }}>Put the letters in order</h1>
       <SortableLetterContainer style={{ cursor: "pointer" }}
